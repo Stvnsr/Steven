@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Konversi Suhu</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- box icons -->
+    <link 
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+  />
+  <!-- fontawesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="temperature-converter">
+            <h2 class="title">Masukkan suhu derajat Celsius(°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit(°F)</h2>
+
+            <!-- input field -->
+            <div class="celsius-type">
+                <!-- for celsius -->
+                <div class="celsius-field">
+                    <label for="celsius">Celsius(°C):</label>
+                    <input type="number" name="celsius" id="celsius">
+                </div>
+
+            </div>
+
+            <button id="convert-btn">Konversi</button>
+            <button id="reset-btn">Reset</button>
+            <button id="reverse-btn">Reverse</button>
+
+            <!-- showing result here -->
+            <div class="result">
+                <span class="result">Fahrenheit(°F):</span>
+                <h2 class="fahrenheit-value" id="fahrenheit">194</h2>
+            </div>
+
+            <!-- showing result here -->
+            <div class="result">
+                <span class="result">Cara Kalkulasi:</span>
+                <h2 class="cara" id="cara">90°C*(9/5)+32=194°F</h2>
+            </div>
+
+            <!-- showing result here -->
+            <div class="result">
+                <span class="result">Fahrenheit ke Celsius</span>
+            </div>
+
+        </div>
+
+        <div class="temperature-converter">
+            <h2 class="title">Cara Konversi Dari Celsius(°C) ke Fahrenheit(°F)</h2>
+            <h3 class="context">Suhu S dalam derajat Fahrenheit(°F) sama dengan suhu S dalam derajat Celsius(°C) kali 9/5 tambah 32 </h3>
+            <h3 class="context">S(°F) = (S(°C) x 9/5)+32 </h3>
+            <h3 class="context">atau</h3>
+            <h3 class="context">S(°F) = (S(°C) x 1.8)+32</h3>
+        
+        </div>
+
+    </div>
+
+    <!-- script tags -->
+    <script src="js/script.js"></script>
+</body>
+</html>

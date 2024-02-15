@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.temperature-converter{
+    width: 100%;
+    min-width: 320px;
+    padding: 20px 25px 45px;
+    border-radius: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.title{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.result{
+    text-align: left;
+}
+
+.result-heading{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.fahrenheit-value{
+    border-bottom: 2px solid whitesmoke;
+    padding: 10px;
+    transition: all .45s ease;
+}
+
+.celsius-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
